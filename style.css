@@ -44,6 +44,7 @@ header {
 .right span:hover {
     background-color: rgb(159 159 159 / 90%);
 }
+
 aside {
     display: flex;
     /* width: 15%; */
@@ -81,6 +82,7 @@ aside {
 .ele {
     display: flex;
     padding: 5px;
+    padding-right: 50px;
     margin: 10px;
     align-items: center;
 }
@@ -113,9 +115,9 @@ aside {
     width: 100%;
 }
 
-.container{
-    padding-right:5px;
-    width: calc( 100% - 170px );
+.container {
+    padding-right: 5px;
+    width: calc(100% - 212px);
     background-color: #e7e7e7;
 }
 
@@ -206,6 +208,7 @@ button#btn2 {
     color: rgb(0, 0, 0);
     padding: 7px 5px;
 }
+
 .container-top {
     background-color: white;
     display: flex;
@@ -214,11 +217,13 @@ button#btn2 {
     align-items: center;
     justify-content: space-between;
 }
+
 .container-right {
     display: flex;
 }
 
-#btn4 , #btn5 {
+#btn4,
+#btn5 {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -227,22 +232,23 @@ button#btn2 {
     margin: 8px;
 }
 
-.container-top input{
+.container-top input {
     width: 180px;
 }
 
 .container-bottom {
     display: flex;
-    padding:5px;
+    padding: 5px;
     border-radius: 15px;
     background-color: white;
     justify-content: space-between;
 }
 
-.selectors{
+.selectors {
     margin-bottom: 10px;
 }
-.circle{
+
+.circle {
     display: inline-flex;
     width: 10px;
     height: 10px;
@@ -250,15 +256,22 @@ button#btn2 {
     background-color: rgb(43, 255, 32);
 }
 
-.date p, .wrp, .id p, .amount p, .fee p, .total p {
+.date p,
+.wrp,
+.id p,
+.amount p,
+.fee p,
+.total p {
     padding: 10px;
     padding-left: 0px;
 }
-.date p{
+
+.date p {
     color: blue;
 
 }
-.wrp{
+
+.wrp {
     display: flex;
     align-items: center;
 }
@@ -268,9 +281,9 @@ button#btn2 {
     border: none;
     background: none;
     color: #8b8ba7;
-  }
+}
 
-  .form {
+.form {
     --timing: 0.3s;
     --width-of-input: 270px;
     --height-of-input: 40px;
@@ -288,10 +301,10 @@ button#btn2 {
     padding-inline: 0.8em;
     border-radius: var(--border-radius);
     transition: border-radius 0.5s ease;
-    background: var(--input-bg,#fff);
-  }
+    background: var(--input-bg, #fff);
+}
 
-  .input {
+.input {
     font-size: 0.9rem;
     background-color: transparent;
     width: 100%;
@@ -299,9 +312,9 @@ button#btn2 {
     padding-inline: 0.5em;
     padding-block: 0.7em;
     border: none;
-  }
+}
 
-  .form:before {
+.form:before {
     content: "";
     position: absolute;
     background: var(--border-color);
@@ -313,33 +326,33 @@ button#btn2 {
     bottom: 0;
     border-radius: 1px;
     transition: transform var(--timing) ease;
-  }
+}
 
-  .form:focus-within {
+.form:focus-within {
     border-radius: var(--after-border-radius);
-  }
-  
-  input:focus {
+}
+
+input:focus {
     outline: none;
-  }
+}
 
-  .form:focus-within:before {
+.form:focus-within:before {
     transform: scale(1);
-  }
+}
 
-  .reset {
+.reset {
     border: none;
     background: none;
     opacity: 0;
     visibility: hidden;
-  }
- 
-  input:not(:placeholder-shown) ~ .reset {
+}
+
+input:not(:placeholder-shown)~.reset {
     opacity: 1;
     visibility: visible;
-  }
+}
 
-  .form svg {
+.form svg {
     width: 17px;
     margin-top: 3px;
-  }
+}
