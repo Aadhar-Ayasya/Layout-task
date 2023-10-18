@@ -47,9 +47,7 @@ header {
 
 aside {
     display: flex;
-    /* width: 15%; */
-    /* height: 100vh; */
-    background-color: rgb(43, 61, 106);
+    background-color: #1b2237;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -78,33 +76,46 @@ aside {
     padding-bottom: 350px;
     color: white;
 }
+.ele span {
+    padding-right: 10px;
+}
 
 .ele {
+    color: rgba(255, 255, 255, 0.762);
     display: flex;
     padding: 5px;
-    padding-right: 50px;
+    padding-right: 40px;
     margin: 10px;
     align-items: center;
 }
 
 .ele:hover {
-    background-color: rgba(220, 220, 220, 0.3);
+    background-color: rgba(220, 220, 220, 0.2);
+    color: rgba(255, 255, 255, 1);
+
     border-radius: 5px;
 }
 
 .bottom {
-    padding-bottom: 10px;
+    border-radius: 15px;
+    margin: 10px;
     display: flex;
     justify-content: space-around;
     color: white;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bottom span {
     border-radius: 6px;
     padding: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.txt{
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.762);
 }
 
 .title {
@@ -135,7 +146,7 @@ aside {
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #444497;
+    background-color: #004674;
     display: flex;
     justify-content: space-between;
 }
@@ -145,7 +156,7 @@ aside {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
-    background-color: #4e4ed1;
+    background-color: #0063a8;
     justify-content: space-between;
     height: 100%;
     align-items: center;
@@ -251,6 +262,7 @@ button#btn2 {
 .circle {
     display: inline-flex;
     width: 10px;
+    margin-right:10px;
     height: 10px;
     border-radius: 20px;
     background-color: rgb(43, 255, 32);
@@ -268,7 +280,7 @@ button#btn2 {
 
 .date p {
     color: blue;
-
+   font-weight: 600;
 }
 
 .wrp {
@@ -293,7 +305,7 @@ button#btn2 {
     --border-radius: 30px;
     --after-border-radius: 1px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     width: var(--width-of-input);
     height: var(--height-of-input);
     display: flex;
@@ -355,4 +367,9 @@ input:not(:placeholder-shown)~.reset {
 .form svg {
     width: 17px;
     margin-top: 3px;
+}
+
+#txt2{
+    font-size: 30px;
+    font-weight: 700;
 }
